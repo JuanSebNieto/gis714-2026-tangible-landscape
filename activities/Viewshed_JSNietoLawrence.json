@@ -1,0 +1,19 @@
+{
+    "tasks": [
+        {
+            "layers": [["d.rast", "map=viewshed"]],
+            "base": "elev_lid792_1m",
+            "scanning_params": {
+                "smooth": 10,
+                "zexag": 2,
+                "numscans": 1,
+                "interpolate": true,
+            },
+            "calibrate": true,
+            "analyses": "Viewshed_JSNietoLawrence.py",
+            "title": "Viewshed",
+            "author": "Juan Sebastian Nieto Lawrence",
+            "instructions": "Compute viewshed based on a marker placed on the tangible landscape.",
+        }
+    ]
+}
