@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+
 import grass.script as gs
 
 
@@ -22,7 +23,6 @@ def run_viewshed(scanned_elev, env, points=None, **kwargs):
             env=env,
         )
 
-    point_list = []
     data = (
         gs.read_command(
             "v.out.ascii",
